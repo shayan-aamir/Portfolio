@@ -1,0 +1,164 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #000000;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+/* Header Navigation */
+header {
+    padding: 20px 50px;
+    background: #111111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 50px;
+    background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    flex: 2;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 50px;
+    background-color: #000000;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section p,
+.section li {
+    font-size: 1.1em;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.project p {
+    margin-bottom: 6px;
+}
+
+.project a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+.contact-form button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #dddddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111111;
+    color: #aaa;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
