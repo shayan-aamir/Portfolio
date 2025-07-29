@@ -147,6 +147,304 @@ body.dark-mode .hero p {
 }
 
 .project a {
+    display: inline-block;
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff !important;
+    font-weight: bold;
+    border: 2px solid #c850c0;
+    border-radius: 8px;
+    padding: 12px 28px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.15);
+    margin-top: 10px;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.project a:hover {
+    background: linear-gradient(90deg, #c850c0 0%, #3a8dde 100%);
+    color: #fff !important;
+    border: 2px solid #3a8dde;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+.contact-form button {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: #dddddd;
+}
+
+.contact-form button {
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #c850c0 0%, #3a8dde 100%);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111111;
+    color: #aaa;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 80%;
+    object-fit: cover;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Dark mode styles (to be toggled) */
+body.dark-mode {
+    background: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .section {
+    background: #111111;
+    color: #fff;
+}
+
+body.dark-mode .section h2 {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+body.dark-mode header {
+    background: #111111;
+    color: #fff;
+}
+
+body.dark-mode .logo {
+    color: #fff !important;
+}
+
+body.dark-mode .btn,
+body.dark-mode .project a,
+body.dark-mode .contact-form button {
+    background: #222;
+    color: #fff !important;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .project a:hover,
+body.dark-mode .contact-form button:hover {
+    background: #333;
+}
+
+/* Floating dark mode toggle button */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.15);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: linear-gradient(90deg, #c850c0 0%, #3a8dde 100%);
+}/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #f3e7fa 0%, #f8c6e7 100%);
+    color: #222222;
+    line-height: 1.8;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header Navigation */
+header {
+    padding: 20px 50px;
+    background: #e5d4ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.04);
+}
+
+.logo {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #111 !important;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, #f3e7fa 0%, #f8c6e7 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.hero h1 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    flex: 2;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #0a0a0a 0%, #3a8dde 100%);
+}
+
+.hero h1,
+.hero p {
+    color: #222 !important;
+    text-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+}
+
+.hero .btn {
+    color: #fff !important;
+    text-shadow: none;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 50px;
+    background-color: #000000;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+    padding: 60px 50px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #c850c0;
+    border-bottom: 3px solid #c850c0;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.section p,
+.section li {
+    font-size: 1.1em;
+    font-family: 'Georgia', serif;
+    line-height: 1.8;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.project p {
+    margin-bottom: 6px;
+}
+
+.project a {
     color: #ffffff;
     text-decoration: underline;
 }
