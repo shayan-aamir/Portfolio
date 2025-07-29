@@ -7,25 +7,28 @@
 
 body {
     font-family: 'Georgia', serif;
-    background: #000000;
-    color: #ffffff;
+    background: linear-gradient(135deg, #f3e7fa 0%, #f8c6e7 100%);
+    color: #222222;
     line-height: 1.8;
+    transition: background 0.3s, color 0.3s;
 }
 
 /* Header Navigation */
 header {
     padding: 20px 50px;
-    background: #111111;
+    background: #e5d4ef;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #222;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.04);
 }
 
 .logo {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     font-size: 1.5em;
-    color: #ffffff;
+    color: #111 !important;
 }
 
 .nav-links {
@@ -43,11 +46,12 @@ header {
 /* Hero Section */
 .hero {
     padding: 100px 50px;
-    background: #000000;
+    background: linear-gradient(135deg, #f3e7fa 0%, #f8c6e7 100%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    transition: background 0.3s;
 }
 
 .hero h1 {
@@ -66,17 +70,47 @@ header {
 .btn {
     margin-top: 20px;
     padding: 12px 24px;
-    background: #ffffff;
-    color: #000000;
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff !important;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     display: inline-block;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #0a0a0a 0%, #3a8dde 100%);
+}
+
+.hero h1,
+.hero p {
+    color: #222 !important;
+    text-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+}
+
+.hero .btn {
+    color: #fff !important;
+    text-shadow: none;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* Section Styling */
 .section {
     padding: 100px 50px;
     background-color: #000000;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+    margin-bottom: 40px;
+    padding: 60px 50px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .section h2 {
@@ -84,6 +118,10 @@ header {
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
     margin-bottom: 20px;
+    color: #c850c0;
+    border-bottom: 3px solid #c850c0;
+    display: inline-block;
+    padding-bottom: 4px;
 }
 
 .section p,
@@ -111,6 +149,10 @@ header {
 .project a {
     color: #ffffff;
     text-decoration: underline;
+}
+
+.project a:hover {
+    color: #c850c0;
 }
 
 /* Contact Form */
@@ -145,6 +187,21 @@ header {
     background-color: #dddddd;
 }
 
+.contact-form button {
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff !important;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.08);
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-form button:hover {
+    background: linear-gradient(90deg, #c850c0 0%, #3a8dde 100%);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -165,4 +222,67 @@ footer {
 
 ul li {
     margin-bottom: 15px;
+}
+
+/* Dark mode styles (to be toggled) */
+body.dark-mode {
+    background: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .section {
+    background: #111111;
+    color: #fff;
+}
+
+body.dark-mode .section h2 {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+body.dark-mode header {
+    background: #111111;
+    color: #fff;
+}
+
+body.dark-mode .logo {
+    color: #fff !important;
+}
+
+body.dark-mode .btn,
+body.dark-mode .project a,
+body.dark-mode .contact-form button {
+    background: #222;
+    color: #fff !important;
+}
+
+body.dark-mode .btn:hover,
+body.dark-mode .project a:hover,
+body.dark-mode .contact-form button:hover {
+    background: #333;
+}
+
+/* Floating dark mode toggle button */
+#dark-mode-toggle {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    background: linear-gradient(90deg, #3a8dde 0%, #c850c0 100%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    box-shadow: 0 2px 8px rgba(200, 80, 192, 0.15);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: linear-gradient(90deg, #c850c0 0%, #3a8dde 100%);
 }
