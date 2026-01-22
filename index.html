@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shayan Aamir | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <!-- Header Navigation -->
   <header>
     <nav>
       <div class="logo">Shayan Aamir</div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -25,27 +32,28 @@
 
   <!-- Hero Section: Side-by-side layout -->
   <section class="hero">
-  <div class="hero-left">
-    <img src="assets/images/mypic.jpeg" alt="Shayan Aamir" class="profile-photo">
-  </div>
-  <div class="hero-right">
-    <h1>Hi, I am<br>Shayan Aamir</h1>
-    <p>Computer Science Undergraduate | AI & ML Enthusiast | AI Web App Developer |</p>
-    <a href="https://www.linkedin.com/in/shayan-aamir-123460253" class="btn" target="_blank">Connect on LinkedIn</a>
-  </div>
-</section>
+    <div class="hero-left">
+      <img src="assets/images/mypic.jpeg" alt="Shayan Aamir" class="profile-photo">
+    </div>
+    <div class="hero-right">
+      <h1>Hi, I am<br>Shayan Aamir</h1>
+      <p>Computer Science Undergraduate | AI & ML Enthusiast | AI Web App Developer |</p>
+      <a href="https://www.linkedin.com/in/shayan-aamir-123460253" class="btn" target="_blank">Connect on LinkedIn</a>
+    </div>
+  </section>
 
   <!-- Contact Info Section -->
   <section class="section contact-info-section" style="padding: 40px 50px; margin: 40px 50px;">
-    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
+    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap; justify-content: center;">
       <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 1.2em;">📧</span>
-        <a href="mailto:sfancy348@gmail.com" style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">sfancy348@gmail.com</a>
+        <a href="mailto:sfancy348@gmail.com"
+          style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">sfancy348@gmail.com</a>
       </div>
-      <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap;">
       <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 1.2em;">📧</span>
-        <a href="mailto:sfancy348@gmail.com" style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">shayanaamir5503@gmail.com</a>
+        <a href="mailto:shayanaamir5503@gmail.com"
+          style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">shayanaamir5503@gmail.com</a>
       </div>
       <div style="display: flex; align-items: center; gap: 10px;">
         <span style="font-size: 1.2em;">📱</span>
@@ -58,13 +66,21 @@
   <section id="about" class="section">
     <h2>About Me</h2>
     <p>
-      I’m Shayan Aamir, a Computer Science undergraduate at FAST-NUCES Karachi with a strong interest in AI-powered web applications, data science, and machine learning. I enjoy building end-to-end solutions that combine intelligent algorithms with clean, scalable web systems.
-      I recently completed a Summer 2025 AI Web App Internship at Nexium, where I developed and deployed multiple full-stack AI applications. My work included an AI-based Blog Summarizer, an AI Recipe Generator with Supabase authentication and n8n workflows, and interactive web tools using Python, Django, Flask, MongoDB, Supabase, and React.Beyond internships, I have built projects such as a Grocery Store Management System with role-based access control and a Machine Learning–based Cricket Match Predictor using Random Forests and recommendation systems. I enjoy working with data-driven systems, recommender algorithms, and backend architectures.
-      I am passionate about continuous learning, problem-solving, and building impactful software that blends AI, data, and real-world applications.
+      I’m Shayan Aamir, a Computer Science undergraduate at FAST-NUCES Karachi with a strong interest in AI-powered web
+      applications, data science, and machine learning. I enjoy building end-to-end solutions that combine intelligent
+      algorithms with clean, scalable web systems.
+      I recently completed a Summer 2025 AI Web App Internship at Nexium, where I developed and deployed multiple
+      full-stack AI applications. My work included an AI-based Blog Summarizer, an AI Recipe Generator with Supabase
+      authentication and n8n workflows, and interactive web tools using Python, Django, Flask, MongoDB, Supabase, and
+      React.Beyond internships, I have built projects such as a Grocery Store Management System with role-based access
+      control and a Machine Learning–based Cricket Match Predictor using Random Forests and recommendation systems. I
+      enjoy working with data-driven systems, recommender algorithms, and backend architectures.
+      I am passionate about continuous learning, problem-solving, and building impactful software that blends AI, data,
+      and real-world applications.
     </p>
   </section>
 
-   <section id="education" class="section">
+  <section id="education" class="section">
     <h2>Education</h2>
     <ul>
       <li><strong>BS in Computer Science</strong>, FAST-NUCES Karachi — <em>CGPA: 3.31/4.00</em> (Expected 2027)</li>
@@ -77,47 +93,54 @@
   <section id="skills" class="section">
     <h2>Technical Skills</h2>
     <ul>
-      <li><strong>Programming:</strong> C, C++, Python, HTML, CSS, JavaScript (basic),MongoDB, Supabase, n8n</li>
+      <li><strong>Programming:</strong> C, C++, Python, HTML, CSS, JavaScript (basic), MongoDB, Supabase, n8n</li>
       <li><strong>Framework:</strong> Django, Flask, Pandas, Numpy, POSIX Threads, MySQL</li>
-      <li><strong>Concepts:</strong> OOP, DSA, AI/ML, Parallel Programming, Data Analysis, Data Science, Recommender Systems</li>
+      <li><strong>Concepts:</strong> OOP, DSA, AI/ML, Parallel Programming, Data Analysis, Data Science, Recommender
+        Systems</li>
       <li><strong>Systems:</strong> Ubuntu OS</li>
     </ul>
   </section>
 
   <section id="experience" class="section">
-  <h2>Experience</h2>
-  <ul>
-    <li>
-      <strong>AI Web App Intern</strong><br>
-      <em>Nexium (Summer 2025)</em><br>
-      Built a Quote Generator using React and ShadCN UI to display topic-based quotes from local JSON, deployed on Vercel.<br>
-      Developed a Blog Summariser to scrape blog content, simulate AI summaries, translate to Urdu, and store data in Supabase and MongoDB.<br>
-      Created an AI-powered Recipe Generator with magic link auth, n8n AI integration, Supabase/MongoDB backend, and CI/CD deployment via Vercel.
-    </li>
-    
-    <li>
-      <strong>Sportics DC HEAD</strong><br>
-      Sportics 25-26 – FAST-NUCES Karachi</<br>
-    </li>
-    
-    <li>
-      <strong>Event Management- Career Fair - Deputy</strong><br>
-      Procom '25 – FAST-NUCES Karachi</<br>
-      Helped organize one of the largest university-level tech competitions by managing logistics and event coordination.
-    </li>
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>AI Web App Intern</strong><br>
+        <em>Nexium (Summer 2025)</em><br>
+        Built a Quote Generator using React and ShadCN UI to display topic-based quotes from local JSON, deployed on
+        Vercel.<br>
+        Developed a Blog Summariser to scrape blog content, simulate AI summaries, translate to Urdu, and store data in
+        Supabase and MongoDB.<br>
+        Created an AI-powered Recipe Generator with magic link auth, n8n AI integration, Supabase/MongoDB backend, and
+        CI/CD deployment via Vercel.
+      </li>
 
-    <li>
-      <strong>Event Management Team Member</strong><br>
-      Procom '24 – FAST-NUCES Karachi</<br>
-      Helped organize one of the largest university-level tech competitions by managing logistics and event coordination.
-    </li>
-    <li>
-      <strong>Career Fair Volunteer</strong><br>
-      <em>ACM Society – FAST-NUCES</em><br>
-      Contributed to the planning and execution of a successful career fair, engaging with industry professionals and recruiters.
-    </li>
-  </ul>
-</section>
+      <li>
+        <strong>Sportics DC HEAD</strong><br>
+        Sportics 25-26 – FAST-NUCES Karachi</<br>
+      </li>
+
+      <li>
+        <strong>Event Management- Career Fair - Deputy</strong><br>
+        Procom '25 – FAST-NUCES Karachi</<br>
+        Helped organize one of the largest university-level tech competitions by managing logistics and event
+        coordination.
+      </li>
+
+      <li>
+        <strong>Event Management Team Member</strong><br>
+        Procom '24 – FAST-NUCES Karachi</<br>
+        Helped organize one of the largest university-level tech competitions by managing logistics and event
+        coordination.
+      </li>
+      <li>
+        <strong>Career Fair Volunteer</strong><br>
+        <em>ACM Society – FAST-NUCES</em><br>
+        Contributed to the planning and execution of a successful career fair, engaging with industry professionals and
+        recruiters.
+      </li>
+    </ul>
+  </section>
 
 
   <!-- Projects Section -->
@@ -126,15 +149,30 @@
 
     <div class="project">
       <h3>Ashes Predictor</h3>
-      <p>The Ashes 2025-2026 Win Predictor is a machine learning web application that forecasts outcomes of the Ashes cricket series between England and Australia. Built with Python and Flask, it uses a Random Forest model trained on 2000-2023 Ashes data to predict match winners, series outcomes, and win probabilities.The system includes AI-powered pitch analysis using DeepSeek API to assess venue conditions, and a dynamic team selection algorithm that generates venue-specific playing 11s based on pitch characteristics, player form, and performance metrics. It also features a hybrid recommendation system with seven algorithms (content-based, collaborative filtering, hybrid, venue-based, similarity-based, popularity-based) for player recommendations.The application integrates real-time cricket data from CricAPI and ESPN Cricinfo APIs to provide up-to-date squad information and player statistics. The interactive dashboard, built with Bootstrap 5, visualizes predictions, team selections, historical analysis, and recommendation comparisons, making complex data accessible and actionable for cricket enthusiasts and analysts.</p>
+      <p>The Ashes 2025-2026 Win Predictor is a machine learning web application that forecasts outcomes of the Ashes
+        cricket series between England and Australia. Built with Python and Flask, it uses a Random Forest model trained
+        on 2000-2023 Ashes data to predict match winners, series outcomes, and win probabilities.The system includes
+        AI-powered pitch analysis using DeepSeek API to assess venue conditions, and a dynamic team selection algorithm
+        that generates venue-specific playing 11s based on pitch characteristics, player form, and performance metrics.
+        It also features a hybrid recommendation system with seven algorithms (content-based, collaborative filtering,
+        hybrid, venue-based, similarity-based, popularity-based) for player recommendations.The application integrates
+        real-time cricket data from CricAPI and ESPN Cricinfo APIs to provide up-to-date squad information and player
+        statistics. The interactive dashboard, built with Bootstrap 5, visualizes predictions, team selections,
+        historical analysis, and recommendation comparisons, making complex data accessible and actionable for cricket
+        enthusiasts and analysts.</p>
 
       <a href="https://github.com/shayan-aamir/ashes-predictor.git" target="_blank">View on GitHub</a>
     </div>
 
 
-      <div class="project">
+    <div class="project">
       <h3>Ai-Code-Explainer</h3>
-      <p>Ai-Code-Explainer is an AI-powered web application that helps developers understand and improve their code. It analyzes code snippets in multiple programming languages (C++, Python, JavaScript, TypeScript) and provides detailed explanations, bug detection, and optimization suggestions. Built with React and TypeScript, the application features a professional dark theme interface and integrates with Google Gemini AI through Supabase Edge Functions. Users can paste code, select a language, and receive comprehensive analysis results with a daily limit of 5 requests per user.</p>
+      <p>Ai-Code-Explainer is an AI-powered web application that helps developers understand and improve their code. It
+        analyzes code snippets in multiple programming languages (C++, Python, JavaScript, TypeScript) and provides
+        detailed explanations, bug detection, and optimization suggestions. Built with React and TypeScript, the
+        application features a professional dark theme interface and integrates with Google Gemini AI through Supabase
+        Edge Functions. Users can paste code, select a language, and receive comprehensive analysis results with a daily
+        limit of 5 requests per user.</p>
       <a href="https://github.com/shayan-aamir/ai-code-explainer.git" target="_blank">View on GitHub</a>
     </div>
 
@@ -142,14 +180,24 @@
 
     <div class="project">
       <h3>https-client-server</h3>
-      <p>This project simulates real-world computer networking concepts by demonstrating HTTP client-server communication, packet routing, congestion control, and performance analysis in an integrated environment. It visually represents different network topologies such as star, mesh, ring, and custom designs to help understand network structure and behavior. The system illustrates packet flow through routers using routing algorithms and hop-by-hop traversal to explain data transmission. It also analyzes key performance metrics including latency, throughput, and various delay components through graphical visualizations. Network congestion scenarios are modeled using queue-based simulations to show packet buffering and dropping behavior. Overall, the project bridges theoretical networking concepts with practical, hands-on simulation and visualization.</p>
+      <p>This project simulates real-world computer networking concepts by demonstrating HTTP client-server
+        communication, packet routing, congestion control, and performance analysis in an integrated environment. It
+        visually represents different network topologies such as star, mesh, ring, and custom designs to help understand
+        network structure and behavior. The system illustrates packet flow through routers using routing algorithms and
+        hop-by-hop traversal to explain data transmission. It also analyzes key performance metrics including latency,
+        throughput, and various delay components through graphical visualizations. Network congestion scenarios are
+        modeled using queue-based simulations to show packet buffering and dropping behavior. Overall, the project
+        bridges theoretical networking concepts with practical, hands-on simulation and visualization.</p>
       <a href="https://github.com/shayan-aamir/https-client-server.git" target="_blank">View on GitHub</a>
     </div>
 
 
     <div class="project">
       <h3>Grocery Store Management System</h3>
-      <p>GSMS is a comprehensive web-based Grocery Store Management System built with Python Flask backend and a responsive HTML/CSS/JavaScript frontend. It enables efficient management of products, customers, orders, and finances through a user-friendly dashboard, complete with secure authentication and role-based permissions. The system utilizes MySQL for robust data storage.</p>
+      <p>GSMS is a comprehensive web-based Grocery Store Management System built with Python Flask backend and a
+        responsive HTML/CSS/JavaScript frontend. It enables efficient management of products, customers, orders, and
+        finances through a user-friendly dashboard, complete with secure authentication and role-based permissions. The
+        system utilizes MySQL for robust data storage.</p>
       <a href="https://github.com/shayan-aamir/GSMS.git" target="_blank">View on GitHub</a>
     </div>
 
@@ -157,11 +205,13 @@
 
     <div class="project">
       <h3>Recipe Generator</h3>
-      <p>Developed an AI-powered Recipe Generator web app that allows users to log in via magic link authentication using Supabase, enabling a seamless and secure experience. I integrated n8n to automate recipe generation, used MongoDB for data storage, and deployed the full-stack app with a CI/CD pipeline on Vercel.</p>
+      <p>Developed an AI-powered Recipe Generator web app that allows users to log in via magic link authentication
+        using Supabase, enabling a seamless and secure experience. I integrated n8n to automate recipe generation, used
+        MongoDB for data storage, and deployed the full-stack app with a CI/CD pipeline on Vercel.</p>
       <a href="https://github.com/shayan-aamir/recipe-generator.git" target="_blank">View on GitHub</a>
     </div>
 
-     <div class="project">
+    <div class="project">
       <h3>Quote Generator Web App</h3>
       <p>A simple motivational quote generator built with Next.js, ShadCN UI, and deployed on Vercel.</p>
       <a href="https://github.com/shayan-aamir/nexium-intern-assignment1.git" target="_blank">View on GitHub</a>
@@ -169,36 +219,52 @@
 
     <div class="project">
       <h3>Blog Summariser</h3>
-      <p>A Next.js web app that scrapes blog text from a URL, simulates an AI summary, translates it to Urdu, and saves the summary in Supabase and the full text in MongoDB. Built with ShadCN UI and deployable to Vercel.</p>
+      <p>A Next.js web app that scrapes blog text from a URL, simulates an AI summary, translates it to Urdu, and saves
+        the summary in Supabase and the full text in MongoDB. Built with ShadCN UI and deployable to Vercel.</p>
       <a href="https://github.com/shayan-aamir/nexium-assig_2.git" target="_blank">View on GitHub</a>
     </div>
 
     <div class="project">
       <h3>Tic Tac Toe with AI</h3>
-      <p>A Python implementation of Tic Tac Toe with an unbeatable AI opponent using the minimax algorithm. The game features a graphical user interface built with tkinter.</p>
+      <p>A Python implementation of Tic Tac Toe with an unbeatable AI opponent using the minimax algorithm. The game
+        features a graphical user interface built with tkinter.</p>
       <a href="https://github.com/shayan-aamir/tic-tac-toe.git" target="_blank">View on GitHub</a>
     </div>
-    
+
 
     <div class="project">
       <h3>Home Prices</h3>
-      <p>This data science project series walks through step by step process of how to build a real estate price prediction website. We will first build a model using sklearn and linear regression using banglore home prices dataset from kaggle.com. Second step would be to write a python flask server that uses the saved model to serve http requests. Third component is the website built in html, css and javascript that allows user to enter home square ft area, bedrooms etc and it will call python flask server to retrieve the predicted price. During model building we will cover almost all data science concepts such as data load and cleaning, outlier detection and removal, feature engineering, dimensionality reduction, gridsearchcv for hyperparameter tunning, k fold cross validation etc. Technology and tools wise this project covers,Python Numpy and Pandas for data cleaning Matplotlib for data visualization Sklearn for model building Jupyter notebook, visual studio code and pycharm as IDE Python flask for http server HTML/CSS/Javascript for UI</p>
+      <p>This data science project series walks through step by step process of how to build a real estate price
+        prediction website. We will first build a model using sklearn and linear regression using banglore home prices
+        dataset from kaggle.com. Second step would be to write a python flask server that uses the saved model to serve
+        http requests. Third component is the website built in html, css and javascript that allows user to enter home
+        square ft area, bedrooms etc and it will call python flask server to retrieve the predicted price. During model
+        building we will cover almost all data science concepts such as data load and cleaning, outlier detection and
+        removal, feature engineering, dimensionality reduction, gridsearchcv for hyperparameter tunning, k fold cross
+        validation etc. Technology and tools wise this project covers,Python Numpy and Pandas for data cleaning
+        Matplotlib for data visualization Sklearn for model building Jupyter notebook, visual studio code and pycharm as
+        IDE Python flask for http server HTML/CSS/Javascript for UI</p>
       <a href="https://github.com/shayan-aamir/home_prices.git" target="_blank">View on GitHub</a>
     </div>
 
 
     <div class="project">
       <h3>Acting_CLone</h3>
-      <p>⭐ Built a Real-Time Neon Pose Tracker and 3D Skeleton Visualizer. While exploring real-time AI and computer vision, I aimed to build a visually engaging human pose tracking system using only Python.Utilized OpenCV, MediaPipe, and Matplotlib to track body movements in real time, applied neon gradient effects, added motion trails, and rendered a dynamic 3D skeleton.Delivered an interactive system that accurately detects and animates poses with a live FPS counter and fallback “SCANNING” interface when no pose is detected.
+      <p>⭐ Built a Real-Time Neon Pose Tracker and 3D Skeleton Visualizer. While exploring real-time AI and computer
+        vision, I aimed to build a visually engaging human pose tracking system using only Python.Utilized OpenCV,
+        MediaPipe, and Matplotlib to track body movements in real time, applied neon gradient effects, added motion
+        trails, and rendered a dynamic 3D skeleton.Delivered an interactive system that accurately detects and animates
+        poses with a live FPS counter and fallback “SCANNING” interface when no pose is detected.
 
-</p>
+      </p>
       <a href="https://github.com/shayan-aamir/AI_clone.git" target="_blank">View on GitHub</a>
     </div>
 
 
     <div class="project">
       <h3>Ice Cream Factory OS Simulation</h3>
-      <p>Simulated a multithreaded factory using POSIX Threads in C. Demonstrated synchronization with semaphores and mutexes.</p>
+      <p>Simulated a multithreaded factory using POSIX Threads in C. Demonstrated synchronization with semaphores and
+        mutexes.</p>
       <a href="https://github.com/shayan-aamir/ice_cream_factory_ubuntu.git" target="_blank">View on GitHub</a>
     </div>
 
@@ -220,7 +286,9 @@
     <div class="project">
       <h3>Chat App</h3>
       <p>
-        This real-time chat application showcases my proficiency in full-stack development using Django for the robust backend and mention frontend, e.g., HTML/CSS/JS for the interactive frontend. It features secure user authentication and instant messaging, demonstrating my ability to build scalable, data-driven web experiences.
+        This real-time chat application showcases my proficiency in full-stack development using Django for the robust
+        backend and mention frontend, e.g., HTML/CSS/JS for the interactive frontend. It features secure user
+        authentication and instant messaging, demonstrating my ability to build scalable, data-driven web experiences.
       </p>
       <a href="https://github.com/shayan-aamir/chat-app.git" target="_blank">View on GitHub</a>
     </div>
@@ -228,7 +296,9 @@
     <div class="project">
       <h3>Casino Game</h3>
       <p>
-        A casino game built using C++! 🎰🎲 This project has been a fantastic opportunity to delve deeper into coding and enhance my programming skills. From designing the game mechanics to implementing the logic, it’s been an incredible journey of learning and creativity.
+        A casino game built using C++! 🎰🎲 This project has been a fantastic opportunity to delve deeper into coding
+        and enhance my programming skills. From designing the game mechanics to implementing the logic, it’s been an
+        incredible journey of learning and creativity.
       </p>
       <a href="https://github.com/shayan-aamir/casino_game.git" target="_blank">View on GitHub</a>
     </div>
@@ -237,7 +307,9 @@
     <div class="project">
       <h3>Voting_System</h3>
       <p>
-        An online voting system, demonstrating my capabilities in building secure and efficient web applications. It showcases my understanding of user authentication, data management, and the implementation of a structured system for collecting and tallying votes.
+        An online voting system, demonstrating my capabilities in building secure and efficient web applications. It
+        showcases my understanding of user authentication, data management, and the implementation of a structured
+        system for collecting and tallying votes.
       </p>
       <a href="https://github.com/shayan-aamir/Voting_System.git" target="_blank">View on GitHub</a>
     </div>
@@ -245,7 +317,7 @@
   </section>
 
 
-   <section id="certificates" class="section">
+  <section id="certificates" class="section">
     <h2>Certificates</h2>
     <ul>
       <li>
@@ -275,11 +347,11 @@
     <form action="https://formsubmit.co/sfancy348@gmail.com" method="POST" class="contact-form">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_subject" value="New Portfolio Inquiry!">
-      
+
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      
+
       <button type="submit">Send Message</button>
     </form>
   </section>
@@ -292,5 +364,5 @@
   <button id="dark-mode-toggle" title="Toggle dark mode">🌙</button>
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
