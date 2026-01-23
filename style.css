@@ -11,6 +11,8 @@ body {
     color: #1e293b;
     line-height: 1.6;
     transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll on small screens */
 }
 
 /* Header Navigation */
@@ -325,6 +327,25 @@ body.dark-mode .contact-form textarea:focus {
     border-color: #0ea5e9;
 }
 
+/* Hamburger (hidden on desktop by default) */
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #0f172a;
+    margin: 4px 0;
+    border-radius: 999px;
+    transition: transform 0.3s ease, opacity 0.3s ease, background 0.3s ease;
+}
+
+body.dark-mode .hamburger span {
+    background: #f1f5f9;
+}
+
 /* Floating dark mode toggle button */
 #dark-mode-toggle {
     position: fixed;
@@ -350,4 +371,90 @@ body.dark-mode .contact-form textarea:focus {
     background: linear-gradient(90deg, #0284c7 0%, #2563eb 100%);
     transform: translateY(-2px);
     box-shadow: 0 6px 25px rgba(14, 165, 233, 0.4);
+}
+
+/* =========================
+   Responsive Styles
+   ========================= */
+@media (max-width: 768px) {
+    header {
+        padding: 14px 16px;
+    }
+
+    .logo {
+        font-size: 1.25em;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        cursor: pointer;
+        padding: 6px;
+    }
+
+    /* Stack hero content */
+    .hero {
+        padding: 80px 20px 60px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-left {
+        margin-bottom: 16px;
+    }
+
+    .hero h1 {
+        font-size: 2.3em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    /* Sections padding */
+    .section {
+        padding: 50px 20px;
+        margin: 20px 12px;
+    }
+
+    /* Nav becomes overlay menu */
+    .nav-links {
+        position: fixed;
+        top: 64px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 20px 32px;
+        background: #ffffff;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+        transform: translateY(-120%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 999;
+    }
+
+    body.dark-mode .nav-links {
+        background: #020617;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.8);
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links a {
+        font-size: 1.05em;
+    }
 }
