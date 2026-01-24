@@ -41,3 +41,23 @@ navLinksItems.forEach(item => {
         }
     });
 });
+
+// Go to top button
+const goToTopBtn = document.getElementById('go-to-top');
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        goToTopBtn.classList.add('show');
+    } else {
+        goToTopBtn.classList.remove('show');
+    }
+});
+
+// Scroll to top when button is clicked
+goToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
