@@ -1,388 +1,670 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shayan Aamir | F1 AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shayan Aamir | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <!-- F1 RACE START SPLASH SCREEN -->
+    <div class="race-start-splash" id="raceSplash">
+      <div class="splash-content">
+        <div class="race-title">SHAYAN AAMIR</div>
+        <div class="race-subtitle">PREPARING FOR LAUNCH...</div>
 
-<body>
-  <!-- Header Navigation -->
-  <header>
-    <nav>
-      <div class="logo">Shayan Aamir</div>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <!-- Massive F1 Grid Lights -->
+        <div class="splash-grid-lights">
+          <div class="splash-light" data-light="0"></div>
+          <div class="splash-light" data-light="1"></div>
+          <div class="splash-light" data-light="2"></div>
+          <div class="splash-light" data-light="3"></div>
+          <div class="splash-light" data-light="4"></div>
+        </div>
+
+        <div class="race-status">LIGHTS OUT</div>
       </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Technical Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- Hero Section: Side-by-side layout -->
-  <section class="hero">
-    <div class="hero-left">
-      <img src="assets/images/mypic.jpeg" alt="Shayan Aamir" class="profile-photo">
+      <!-- Racing line animation -->
+      <div class="racing-line"></div>
     </div>
-    <div class="hero-right">
-      <h1>Hi, I am<br>Shayan Aamir</h1>
-      <p>Computer Science Undergraduate | AI & ML Enthusiast | AI Web App Developer |</p>
-      <a href="https://www.linkedin.com/in/shayan-aamir-123460253" class="btn" target="_blank">Connect on LinkedIn</a>
-    </div>
-  </section>
 
-  <!-- Contact Info Section -->
-  <section class="section contact-info-section" style="padding: 40px 50px; margin: 40px 50px;">
-    <div style="display: flex; gap: 30px; align-items: center; flex-wrap: wrap; justify-content: center;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2em;">📧</span>
-        <a href="mailto:sfancy348@gmail.com"
-          style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">sfancy348@gmail.com</a>
+    <!-- Header Navigation with F1 Grid Lights -->
+    <header class="pit-wall-header">
+      <nav class="pit-wall-nav">
+        <div class="logo">SHAYAN AAMIR</div>
+
+        <!-- F1 Starting Grid Lights -->
+        <div class="grid-lights">
+          <span class="light" data-light="0"></span>
+          <span class="light" data-light="1"></span>
+          <span class="light" data-light="2"></span>
+          <span class="light" data-light="3"></span>
+          <span class="light" data-light="4"></span>
+        </div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#about" data-section="about">About</a></li>
+          <li><a href="#education" data-section="education">Education</a></li>
+          <li><a href="#skills" data-section="skills">Skills</a></li>
+          <li>
+            <a href="#experience" data-section="experience">Experience</a>
+          </li>
+          <li><a href="#projects" data-section="projects">Projects</a></li>
+          <li>
+            <a href="#certificates" data-section="certificates">Certificates</a>
+          </li>
+          <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section: Pit Wall Telemetry Display -->
+    <section class="hero pit-wall-hero">
+      <div class="hero-content">
+        <div class="hero-left">
+          <div class="neon-ring-wrapper">
+            <img
+              src="assets/images/mypic.jpeg"
+              alt="Shayan Aamir"
+              class="profile-photo"
+            />
+            <div class="neon-ring"></div>
+            <div class="neon-pulse"></div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <h1 class="hero-title">SHAYAN AAMIR</h1>
+          <div class="typing-effect">
+            <span class="typing-text"></span><span class="cursor"></span>
+          </div>
+          <p class="hero-subtitle">
+            Computer Science Undergraduate • FAST-NUCES Karachi
+          </p>
+          <a
+            href="https://www.linkedin.com/in/shayan-aamir-123460253"
+            class="btn-primary"
+            target="_blank"
+            >↗ CONNECT ON LINKEDIN</a
+          >
+        </div>
       </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2em;">📧</span>
-        <a href="mailto:shayanaamir5503@gmail.com"
-          style="color: #0ea5e9; text-decoration: none; font-size: 1.1em; font-weight: 500;">shayanaamir5503@gmail.com</a>
+    </section>
+
+    <!-- Contact Info Bar -->
+    <div class="contact-info-bar">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <a href="mailto:sfancy348@gmail.com">sfancy348@gmail.com</a>
       </div>
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <span style="font-size: 1.2em;">📱</span>
-        <span style="font-size: 1.1em; color: #475569;">+92 331 3261025</span>
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <a href="mailto:shayanaamir5503@gmail.com">shayanaamir5503@gmail.com</a>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">📱</span>
+        <span>+92 331 3261025</span>
       </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m Shayan Aamir, a Computer Science undergraduate at FAST-NUCES Karachi with a strong interest in AI-powered web
-      applications, data science, and machine learning. I enjoy building end-to-end solutions that combine intelligent
-      algorithms with clean, scalable web systems.
-      I recently completed a Summer 2025 AI Web App Internship at Nexium, where I developed and deployed multiple
-      full-stack AI applications. My work included an AI-based Blog Summarizer, an AI Recipe Generator with Supabase
-      authentication and n8n workflows, and interactive web tools using Python, Django, Flask, MongoDB, Supabase, and
-      React.Beyond internships, I have built projects such as a Grocery Store Management System with role-based access
-      control and a Machine Learning–based Cricket Match Predictor using Random Forests and recommendation systems. I
-      enjoy working with data-driven systems, recommender algorithms, and backend architectures.
-      I am passionate about continuous learning, problem-solving, and building impactful software that blends AI, data,
-      and real-world applications.
-    </p>
-  </section>
+    <!-- Flashcard Deck Container (Grid View) -->
+    <div class="flashcard-deck">
+      <!-- About Card -->
+      <div class="flashcard-card" data-section="about" id="about">
+        <h3>ABOUT ME</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>BS in Computer Science</strong>, FAST-NUCES Karachi — <em>CGPA: 3.31/4.00</em> (Expected 2027)</li>
-      <li><strong>A Levels</strong>, Alpha College — <em>3 A</em> (2023)</li>
-      <li><strong>O Levels</strong>, Mama Baby Care Cambridge School — <em>4 A*, 3 A, 1 C</em> (2021)</li>
-    </ul>
-  </section>
+      <!-- Education Card -->
+      <div class="flashcard-card" data-section="education" id="education">
+        <h3>EDUCATION</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
+      <!-- Skills Card -->
+      <div class="flashcard-card" data-section="skills" id="skills">
+        <h3>TECHNICAL SKILLS</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Programming:</strong> C, C++, Python, HTML, CSS, JavaScript (basic), MongoDB, Supabase, n8n</li>
-      <li><strong>Framework:</strong> Django, Flask, Pandas, Numpy, POSIX Threads, MySQL, MongoDB, PostgreSQL, React.js,
-        Typescript </li>
-      <li><strong>Concepts:</strong> OOP, DSA, AI/ML, Parallel Programming, Data Analysis, Data Science, Recommender
-        Systems, Rest APIS
-      </li>
-      <li><strong>Systems:</strong> Ubuntu OS</li>
-    </ul>
-  </section>
+      <!-- Experience Card -->
+      <div class="flashcard-card" data-section="experience" id="experience">
+        <h3>EXPERIENCE</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>AI Web App Intern</strong><br>
-        <em>Nexium (Summer 2025)</em><br>
-        Built a Quote Generator using React and ShadCN UI to display topic-based quotes from local JSON, deployed on
-        Vercel.<br>
-        Developed a Blog Summariser to scrape blog content, simulate AI summaries, translate to Urdu, and store data in
-        Supabase and MongoDB.<br>
-        Created an AI-powered Recipe Generator with magic link auth, n8n AI integration, Supabase/MongoDB backend, and
-        CI/CD deployment via Vercel.
-      </li>
+      <!-- Projects Card -->
+      <div class="flashcard-card" data-section="projects" id="projects">
+        <h3>PROJECTS</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
-      <li>
-        <strong>Sportics DC HEAD</strong><br>
-        Sportics 25-26 – FAST-NUCES Karachi</<br>
-      </li>
+      <!-- Certificates Card -->
+      <div class="flashcard-card" data-section="certificates" id="certificates">
+        <h3>CERTIFICATES</h3>
+        <span class="card-arrow">→</span>
+      </div>
 
-      <li>
-        <strong>Event Management- Career Fair - Deputy</strong><br>
-        Procom '25 – FAST-NUCES Karachi</<br>
-        Helped organize one of the largest university-level tech competitions by managing logistics and event
-        coordination.
-      </li>
-
-      <li>
-        <strong>Event Management Team Member</strong><br>
-        Procom '24 – FAST-NUCES Karachi</<br>
-        Helped organize one of the largest university-level tech competitions by managing logistics and event
-        coordination.
-      </li>
-      <li>
-        <strong>Career Fair Volunteer</strong><br>
-        <em>ACM Society – FAST-NUCES</em><br>
-        Contributed to the planning and execution of a successful career fair, engaging with industry professionals and
-        recruiters.
-      </li>
-    </ul>
-  </section>
-
-
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project">
-      <h3>SmartHire_AI</h3>
-      <p>Smart Recruitment & Candidate Evaluation Platform is an AI-powered hiring solution designed to automate and
-        optimize the recruitment process. The platform intelligently parses resumes, extracts candidate skills and
-        experience, and ranks applicants based on job-specific requirements using NLP and machine learning techniques.
-        It incorporates predictive models, talent clustering, and explainable AI to provide data-driven hiring insights.
-        Built-in fairness auditing and blind screening mechanisms help reduce bias and promote objective candidate
-        evaluation. The system features modern React-based dashboards for HR teams and candidates, enabling efficient,
-        transparent, and scalable recruitment workflows.</p>
-
-      <a href="https://github.com/shayan-aamir/SmartHire_AI.git" target="_blank">View on GitHub</a>
+      <!-- Contact Card -->
+      <div class="flashcard-card" data-section="contact" id="contact">
+        <h3>GET IN TOUCH</h3>
+        <span class="card-arrow">→</span>
+      </div>
     </div>
 
-    <div class="project">
-      <h3>Ashes Predictor</h3>
-      <p>The Ashes 2025-2026 Win Predictor is a machine learning web application that forecasts outcomes of the Ashes
-        cricket series between England and Australia. Built with Python and Flask, it uses a Random Forest model trained
-        on 2000-2023 Ashes data to predict match winners, series outcomes, and win probabilities.The system includes
-        AI-powered pitch analysis using DeepSeek API to assess venue conditions, and a dynamic team selection algorithm
-        that generates venue-specific playing 11s based on pitch characteristics, player form, and performance metrics.
-        It also features a hybrid recommendation system with seven algorithms (content-based, collaborative filtering,
-        hybrid, venue-based, similarity-based, popularity-based) for player recommendations.The application integrates
-        real-time cricket data from CricAPI and ESPN Cricinfo APIs to provide up-to-date squad information and player
-        statistics. The interactive dashboard, built with Bootstrap 5, visualizes predictions, team selections,
-        historical analysis, and recommendation comparisons, making complex data accessible and actionable for cricket
-        enthusiasts and analysts.</p>
-
-      <a href="https://github.com/shayan-aamir/ashes-predictor.git" target="_blank">View on GitHub</a>
+    <!-- Full-Screen Section Viewer -->
+    <div class="section-viewer">
+      <div class="section-viewer-header">
+        <button class="back-button" id="backButton">← BACK</button>
+        <h2 id="sectionTitle"></h2>
+        <div></div>
+      </div>
+      <div class="section-viewer-content" id="sectionContent"></div>
     </div>
 
-
-    <div class="project">
-      <h3>Ai-Code-Explainer</h3>
-      <p>Ai-Code-Explainer is an AI-powered web application that helps developers understand and improve their code. It
-        analyzes code snippets in multiple programming languages (C++, Python, JavaScript, TypeScript) and provides
-        detailed explanations, bug detection, and optimization suggestions. Built with React and TypeScript, the
-        application features a professional dark theme interface and integrates with Google Gemini AI through Supabase
-        Edge Functions. Users can paste code, select a language, and receive comprehensive analysis results with a daily
-        limit of 5 requests per user.</p>
-      <a href="https://github.com/shayan-aamir/ai-code-explainer.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-
-    <div class="project">
-      <h3>https-client-server</h3>
-      <p>This project simulates real-world computer networking concepts by demonstrating HTTP client-server
-        communication, packet routing, congestion control, and performance analysis in an integrated environment. It
-        visually represents different network topologies such as star, mesh, ring, and custom designs to help understand
-        network structure and behavior. The system illustrates packet flow through routers using routing algorithms and
-        hop-by-hop traversal to explain data transmission. It also analyzes key performance metrics including latency,
-        throughput, and various delay components through graphical visualizations. Network congestion scenarios are
-        modeled using queue-based simulations to show packet buffering and dropping behavior. Overall, the project
-        bridges theoretical networking concepts with practical, hands-on simulation and visualization.</p>
-      <a href="https://github.com/shayan-aamir/https-client-server.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-    <div class="project">
-      <h3>Grocery Store Management System</h3>
-      <p>GSMS is a comprehensive web-based Grocery Store Management System built with Python Flask backend and a
-        responsive HTML/CSS/JavaScript frontend. It enables efficient management of products, customers, orders, and
-        finances through a user-friendly dashboard, complete with secure authentication and role-based permissions. The
-        system utilizes MySQL for robust data storage.</p>
-      <a href="https://github.com/shayan-aamir/GSMS.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-
-    <div class="project">
-      <h3>Recipe Generator</h3>
-      <p>Developed an AI-powered Recipe Generator web app that allows users to log in via magic link authentication
-        using Supabase, enabling a seamless and secure experience. I integrated n8n to automate recipe generation, used
-        MongoDB for data storage, and deployed the full-stack app with a CI/CD pipeline on Vercel.</p>
-      <a href="https://github.com/shayan-aamir/recipe-generator.git" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Quote Generator Web App</h3>
-      <p>A simple motivational quote generator built with Next.js, ShadCN UI, and deployed on Vercel.</p>
-      <a href="https://github.com/shayan-aamir/nexium-intern-assignment1.git" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Blog Summariser</h3>
-      <p>A Next.js web app that scrapes blog text from a URL, simulates an AI summary, translates it to Urdu, and saves
-        the summary in Supabase and the full text in MongoDB. Built with ShadCN UI and deployable to Vercel.</p>
-      <a href="https://github.com/shayan-aamir/nexium-assig_2.git" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Tic Tac Toe with AI</h3>
-      <p>A Python implementation of Tic Tac Toe with an unbeatable AI opponent using the minimax algorithm. The game
-        features a graphical user interface built with tkinter.</p>
-      <a href="https://github.com/shayan-aamir/tic-tac-toe.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-    <div class="project">
-      <h3>Home Prices</h3>
-      <p>This data science project series walks through step by step process of how to build a real estate price
-        prediction website. We will first build a model using sklearn and linear regression using banglore home prices
-        dataset from kaggle.com. Second step would be to write a python flask server that uses the saved model to serve
-        http requests. Third component is the website built in html, css and javascript that allows user to enter home
-        square ft area, bedrooms etc and it will call python flask server to retrieve the predicted price. During model
-        building we will cover almost all data science concepts such as data load and cleaning, outlier detection and
-        removal, feature engineering, dimensionality reduction, gridsearchcv for hyperparameter tunning, k fold cross
-        validation etc. Technology and tools wise this project covers,Python Numpy and Pandas for data cleaning
-        Matplotlib for data visualization Sklearn for model building Jupyter notebook, visual studio code and pycharm as
-        IDE Python flask for http server HTML/CSS/Javascript for UI</p>
-      <a href="https://github.com/shayan-aamir/home_prices.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-    <div class="project">
-      <h3>Acting_CLone</h3>
-      <p>⭐ Built a Real-Time Neon Pose Tracker and 3D Skeleton Visualizer. While exploring real-time AI and computer
-        vision, I aimed to build a visually engaging human pose tracking system using only Python.Utilized OpenCV,
-        MediaPipe, and Matplotlib to track body movements in real time, applied neon gradient effects, added motion
-        trails, and rendered a dynamic 3D skeleton.Delivered an interactive system that accurately detects and animates
-        poses with a live FPS counter and fallback “SCANNING” interface when no pose is detected.
-
-      </p>
-      <a href="https://github.com/shayan-aamir/AI_clone.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-    <div class="project">
-      <h3>Ice Cream Factory OS Simulation</h3>
-      <p>Simulated a multithreaded factory using POSIX Threads in C. Demonstrated synchronization with semaphores and
-        mutexes.</p>
-      <a href="https://github.com/shayan-aamir/ice_cream_factory_ubuntu.git" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Voice Assistant</h3>
-      <p>Developed a voice assistant in Python using NLP and Speech Recognition for hands-free interaction.</p>
-      <a href="https://github.com/shayan-aamir/voice-assistant-.git" target="_blank">View on GitHub</a>
-    </div>
-
-    <div class="project">
-      <h3>Pacman Game</h3>
-      <p>Advanced Pacman game in C++ with custom ghost AI, power-ups, and GUI using Raylib.</p>
-      <a href="https://github.com/shayan-aamir/pacman-game.git" target="_blank">View on GitHub</a>
-    </div>
-
-
-
-
-    <div class="project">
-      <h3>Chat App</h3>
+    <!-- About Section Content -->
+    <div class="section-content" data-section="about" style="display: none;">
       <p>
-        This real-time chat application showcases my proficiency in full-stack development using Django for the robust
-        backend and mention frontend, e.g., HTML/CSS/JS for the interactive frontend. It features secure user
-        authentication and instant messaging, demonstrating my ability to build scalable, data-driven web experiences.
+       Computer Science student with a strong foundation in software engineering, artificial intelligence, machine learning, and full-stack web development. Skilled in designing scalable applications, developing data-driven solutions, and applying analytical thinking to solve complex real-world problems. Experienced with modern technologies including Python, C++, React, Flask, Django, SQL, NoSQL databases, and cloud-based deployment platforms.
+
+Passionate about exploring emerging technologies in AI, data science, and intelligent systems while continuously expanding technical expertise. Strong problem-solving abilities, adaptability, and a collaborative mindset enable effective contributions to both technical and cross-functional teams. Committed to building impactful digital solutions that combine innovation, efficiency, and user-centric design.
+
       </p>
-      <a href="https://github.com/shayan-aamir/chat-app.git" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project">
-      <h3>Casino Game</h3>
-      <p>
-        A casino game built using C++! 🎰🎲 This project has been a fantastic opportunity to delve deeper into coding
-        and enhance my programming skills. From designing the game mechanics to implementing the logic, it’s been an
-        incredible journey of learning and creativity.
-      </p>
-      <a href="https://github.com/shayan-aamir/casino_game.git" target="_blank">View on GitHub</a>
+    <!-- Education Section Content -->
+    <div class="section-content" data-section="education" style="display: none;">
+      <div class="timeline-race">
+        <div class="timeline-checkpoint">
+          <div class="checkpoint-marker sector-1">S1</div>
+          <div class="checkpoint-content">
+            <h3>BS in Computer Science</h3>
+            <p class="institution">FAST-NUCES Karachi</p>
+            <p class="details">CGPA: 3.31/4.00 • Expected 2027</p>
+          </div>
+        </div>
+        <div class="timeline-checkpoint">
+          <div class="checkpoint-marker sector-2">S2</div>
+          <div class="checkpoint-content">
+            <h3>A Levels</h3>
+            <p class="institution">Alpha College</p>
+            <p class="details">3 A • 2023</p>
+          </div>
+        </div>
+        <div class="timeline-checkpoint">
+          <div class="checkpoint-marker sector-3">S3</div>
+          <div class="checkpoint-content">
+            <h3>O Levels</h3>
+            <p class="institution">Mama Baby Care Cambridge School</p>
+            <p class="details">4 A*, 3 A, 1 C • 2021</p>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- Skills Section Content -->
+    <div class="section-content" data-section="skills" style="display: none;">
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>🔴 SOFT COMPOUND (Core Strengths)</h3>
+          <div class="skill-pills">
+            <span class="skill-pill soft">Python</span>
+            <span class="skill-pill soft">AI/ML</span>
+            <span class="skill-pill soft">Django</span>
+            <span class="skill-pill soft">Data Science</span>
+            <span class="skill-pill soft">Machine Learning</span>
+            <span class="skill-pill soft">Random Forests</span>
+            <span class="skill-pill soft">Recommender Systems</span>
+          </div>
+        </div>
+        <div class="skill-category">
+              <h3>🟡 MEDIUM COMPOUND (Highly Proficient)</h3>
+              <div class="skill-pills">
+                <span class="skill-pill medium">C++</span>
+                <span class="skill-pill medium">React.js</span>
+                <span class="skill-pill medium">TypeScript</span>
+                <span class="skill-pill medium">Flask</span>
+                <span class="skill-pill medium">Supabase</span>
+                <span class="skill-pill medium">MongoDB</span>
+                <span class="skill-pill medium">PostgreSQL</span>
+                <span class="skill-pill medium">MySQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>⚪ HARD COMPOUND (System Foundations)</h3>
+              <div class="skill-pills">
+                <span class="skill-pill hard">C</span>
+                <span class="skill-pill hard">HTML/CSS</span>
+                <span class="skill-pill hard">JavaScript</span>
+                <span class="skill-pill hard">POSIX Threads</span>
+                <span class="skill-pill hard">Parallel Programming</span>
+                <span class="skill-pill hard">Ubuntu OS</span>
+                <span class="skill-pill hard">DSA</span>
+                <span class="skill-pill hard">OOP</span>
+                <span class="skill-pill hard">REST APIs</span>
+                <span class="skill-pill hard">Data Analysis</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>⚙️ TOOLS & PLATFORMS</h3>
+              <div class="skill-pills">
+                <span class="skill-pill tool">n8n</span>
+                <span class="skill-pill tool">Pandas</span>
+                <span class="skill-pill tool">NumPy</span>
+                <span class="skill-pill tool">Next.js</span>
+                <span class="skill-pill tool">Vercel</span>
+                <span class="skill-pill tool">ShadCN UI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="project">
-      <h3>Voting_System</h3>
-      <p>
-        An online voting system, demonstrating my capabilities in building secure and efficient web applications. It
-        showcases my understanding of user authentication, data management, and the implementation of a structured
-        system for collecting and tallying votes.
-      </p>
-      <a href="https://github.com/shayan-aamir/Voting_System.git" target="_blank">View on GitHub</a>
+      <!-- Experience Section Content -->
+      <div class="section-content" data-section="experience" style="display: none;">
+          <div class="timeline-race">
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-marker sector-1">S1</div>
+              <div class="checkpoint-content">
+                <h3>AI Web App Intern</h3>
+                <p class="institution">Nexium • Summer 2025</p>
+                <p class="details">
+                  Built a Quote Generator using React and ShadCN UI to display
+                  topic-based quotes from local JSON, deployed on Vercel.
+                  Developed a Blog Summariser to scrape blog content, simulate
+                  AI summaries, translate to Urdu, and store data in Supabase
+                  and MongoDB. Created an AI-powered Recipe Generator with magic
+                  link auth, n8n AI integration, Supabase/MongoDB backend, and
+                  CI/CD deployment via Vercel.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-marker sector-2">S2</div>
+              <div class="checkpoint-content">
+                <h3>Sportics DC HEAD</h3>
+                <p class="institution">FAST-NUCES Karachi • 2025-2026</p>
+              </div>
+            </div>
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-marker sector-3">S3</div>
+              <div class="checkpoint-content">
+                <h3>Event Management Team</h3>
+                <p class="institution">Procom '24 & '25 • Career Fair Deputy</p>
+                <p class="details">
+                  Helped organize one of the largest university-level tech
+                  competitions by managing logistics and event coordination.
+                  Career Fair Deputy at Procom '25.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-checkpoint">
+              <div class="checkpoint-marker sector-1">S4</div>
+              <div class="checkpoint-content">
+                <h3>Career Fair Volunteer</h3>
+                <p class="institution">ACM Society – FAST-NUCES</p>
+                <p class="details">
+                  Contributed to the planning and execution of a successful
+                  career fair, engaging with industry professionals and
+                  recruiters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section Content -->
+      <div class="section-content" data-section="projects" style="display: none;">
+          <div class="bento-grid">
+            <!-- Star Projects (Wide Tiles) -->
+            <div class="bento-item featured wide">
+              <div class="drs-indicator">DRS</div>
+              <h3>SmartHire_AI</h3>
+              <p>
+                Smart Recruitment & Candidate Evaluation Platform is an
+                AI-powered hiring solution designed to automate and optimize the
+                recruitment process. The platform intelligently parses resumes,
+                extracts candidate skills and experience, and ranks applicants
+                based on job-specific requirements using NLP and machine
+                learning techniques.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/SmartHire_AI.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item featured wide">
+              <div class="drs-indicator">DRS</div>
+              <h3>Ashes Predictor</h3>
+              <p>
+                ML web application forecasting Ashes cricket series outcomes.
+                Uses Random Forest model trained on 2000-2023 data. Features AI
+                pitch analysis via DeepSeek API, dynamic team selection
+                algorithm, and hybrid recommendation system with seven
+                algorithms.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/ashes-predictor.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item featured wide">
+              <div class="drs-indicator">DRS</div>
+              <h3>Ai-Code-Explainer</h3>
+              <p>
+                AI-powered web app that analyzes code snippets in multiple
+                languages (C++, Python, JavaScript, TypeScript). Provides
+                detailed explanations, bug detection, and optimization
+                suggestions. Built with React, TypeScript, and integrates with
+                Google Gemini AI.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/ai-code-explainer.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <!-- Compact Projects -->
+            <div class="bento-item">
+              <h3>https-client-server</h3>
+              <p>
+                Network simulation: HTTP client-server communication, packet
+                routing, congestion control, and performance metrics
+                visualization.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/https-client-server.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Grocery Store Mgmt</h3>
+              <p>
+                Flask web app with role-based access control, user
+                authentication, and MySQL database for product and order
+                management.
+              </p>
+              <a href="https://github.com/shayan-aamir/GSMS.git" target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Recipe Generator</h3>
+              <p>
+                AI-powered app with magic link auth, n8n automation,
+                Supabase/MongoDB backend, deployed on Vercel.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/recipe-generator.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Quote Generator</h3>
+              <p>
+                Next.js app with ShadCN UI displaying topic-based quotes from
+                JSON, deployed on Vercel.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/nexium-intern-assignment1.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Blog Summariser</h3>
+              <p>
+                Scrapes blog URLs, simulates AI summaries, translates to Urdu,
+                stores in Supabase/MongoDB.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/nexium-assig_2.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Tic Tac Toe AI</h3>
+              <p>
+                Python implementation with unbeatable AI using minimax algorithm
+                and tkinter GUI.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/tic-tac-toe.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Home Prices</h3>
+              <p>
+                Data science project: real estate price prediction using
+                scikit-learn, Flask server, and interactive web UI.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/home_prices.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Acting_Clone</h3>
+              <p>
+                Real-Time Neon Pose Tracker using OpenCV, MediaPipe, 3D skeleton
+                visualization with motion trails.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/AI_clone.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Ice Cream Factory</h3>
+              <p>
+                Multithreaded factory simulation using POSIX Threads in C with
+                mutex and semaphore synchronization.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/ice_cream_factory_ubuntu.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Voice Assistant</h3>
+              <p>
+                Python app with NLP and Speech Recognition for hands-free voice
+                interaction.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/voice-assistant-.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Pacman Game</h3>
+              <p>
+                Advanced C++ Pacman game with custom ghost AI, power-ups, and
+                GUI using Raylib.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/pacman-game.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Chat App</h3>
+              <p>
+                Real-time Django backend with secure authentication and instant
+                messaging frontend.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/chat-app.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Casino Game</h3>
+              <p>
+                C++ casino game with game mechanics, logic implementation, and
+                creative design.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/casino_game.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+
+            <div class="bento-item">
+              <h3>Voting System</h3>
+              <p>
+                Online voting system with secure authentication, data
+                management, and vote tallying.
+              </p>
+              <a
+                href="https://github.com/shayan-aamir/Voting_System.git"
+                target="_blank"
+                >GitHub →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates Section Content -->
+      <div class="section-content" data-section="certificates" style="display: none;">
+          <div class="certificates-list">
+            <div class="cert-item">
+              <span class="cert-badge">🏆</span>
+              <div class="cert-text">
+                <h3>
+                  Foundations of Data Science and Machine Learning with Python
+                </h3>
+                <p>Coursera • June 2025</p>
+                <a
+                  href="https://www.coursera.org/account/accomplishments/records/CQ4CVM9LBA2Y"
+                  target="_blank"
+                  >View Certificate →</a
+                >
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">🏆</span>
+              <div class="cert-text">
+                <h3>IBM Data Science Professional Certificate</h3>
+                <p>Credly • July 2025</p>
+                <a
+                  href="https://www.credly.com/badges/dc510c30-382d-4870-8fe8-e39731cdffad/public_url"
+                  target="_blank"
+                  >View Certificate →</a
+                >
+              </div>
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">🏆</span>
+              <div class="cert-text">
+                <h3>Introduction to Front-End Development</h3>
+                <p>Coursera</p>
+                <a
+                  href="https://coursera.org/share/3d76d402655bc646b27e8e0f6ee16ffb"
+                  target="_blank"
+                  >View Certificate →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section Content -->
+      <div class="section-content" data-section="contact" style="display: none;">
+          <p style="margin-bottom: 30px; text-align: center">
+            Have a question or want to work together? Send me a message!
+          </p>
+          <form
+            action="https://formsubmit.co/sfancy348@gmail.com"
+            method="POST"
+            class="contact-form"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Portfolio Inquiry!"
+            />
+
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit" class="btn-primary">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
     </div>
 
-  </section>
+    <!-- Footer -->
+    <footer class="pit-wall-footer">
+      <p>© <span id="year"></span> Shayan Aamir. All rights reserved.</p>
+      <p class="tagline">
+        engineered by passion • powered by AI • fueled by ambition
+      </p>
+    </footer>
 
+    <!-- Floating Controls -->
+    <button id="dark-mode-toggle" class="control-btn" title="Toggle dark mode">
+      🌙
+    </button>
+    <button id="go-to-top" class="control-btn" title="Go to top">↑</button>
 
-  <section id="certificates" class="section">
-    <h2>Certificates</h2>
-    <ul>
-      <li>
-        <a href="https://www.coursera.org/account/accomplishments/records/CQ4CVM9LBA2Y" target="_blank">
-          Foundations of Data Science and Machine Learning with Python – Coursera (June 2025)
-        </a>
-      </li>
-      <li>
-        <a href="https://www.credly.com/badges/dc510c30-382d-4870-8fe8-e39731cdffad/public_url" target="_blank">
-          IBM Data Science Professional Certificate – Credly (July 2025)
-        </a>
-      </li>
-
-      <li>
-        <a href="https://coursera.org/share/3d76d402655bc646b27e8e0f6ee16ffb" target="_blank">
-          Introduction to Front-End Development
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Have a question or want to work together? Send me a message!</p>
-
-    <form action="https://formsubmit.co/sfancy348@gmail.com" method="POST" class="contact-form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_subject" value="New Portfolio Inquiry!">
-
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-
-  <footer>
-    <p>©
-      <script>document.write(new Date().getFullYear())</script> Shayan Aamir. All rights reserved.
-    </p>
-  </footer>
-
-
-  <button id="dark-mode-toggle" title="Toggle dark mode">🌙</button>
-  <button id="go-to-top" title="Go to top">↑</button>
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
